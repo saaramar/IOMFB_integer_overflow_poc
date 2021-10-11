@@ -323,7 +323,7 @@ Fantastic! This explains everything. Just as I suspected, the previous dereferen
 
 The POC works on iOS 15.0 with the exact same panic as well (tested on a virtual iPhone 11 Pro, iOS 15.0):
 
-![image](https://github.com/saaramar/IOMFB_int_overflow_poc/raw/main/docs/assets/corellium_11_pro.png)
+![image](https://github.com/saaramar/IOMFB_integer_overflow_poc/raw/main/docs/assets/corellium_11_pro.png)
 
 An interesting important note is that other implementations of these functions in other classes also had this integer overflow. As far as I can see, the patch fixed these as well. This is not a surprise, because usually when we see a code pattern repeats itself, it's an inline function / macro / etc.
 
@@ -602,7 +602,7 @@ Also, as you saw, [Corellium](https://twitter.com/corelliumhq) was a highly valu
 
 The POCs I have shown here work all the same on iOS 14.7.1-15.0.1. It's probably true for much earlier versions as well, but I checked only on 14.7.1-15.0.1. Please note that over different devices/versions, some of the constants may be different. I specifically wrote the devices/versions I tested on, and it looks consistent, but it may be different on older versions. Just for fun, I checked it also on iPhone 11 Pro Max, iOS 15.0, and it worked the same :)
 
-The code of the POC can be found in this repo.
+The code of the POC can be found in this [repo](https://github.com/saaramar/IOMFB_integer_overflow_poc).
 
 Thanks,
 
